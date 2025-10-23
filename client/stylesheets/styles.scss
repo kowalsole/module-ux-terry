@@ -1,0 +1,121 @@
+/* reset default styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+
+
+
+header {
+  font-family: "Oswald";
+  display: flex;
+  justify-content: center;
+  
+
+}
+
+body {
+// background-color: rgb(242, 232, 232);
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* cards container */
+.charContainer {
+  display: grid; 
+   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+   /* We would have to alter the grid-template-columns, with fr units */
+  /* display: flex;
+  flex-wrap: wrap; */
+  
+}
+
+/* character card container */
+.charCard {
+  background-color:white;
+  border: 1px solid lightgray;
+  border-radius: 1%;
+  margin: 5px;
+  /* display: flex;
+  flex-direction: column; */
+  box-shadow: 3px 2px 2px rgb(239, 237, 229) ;
+
+  .charBtnOptions {
+    display: flex;
+    gap: 10px;
+    
+  }
+}
+
+/* character card header */
+.charHeadContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 100px;
+
+  div {
+    /* width: 100%; */
+    /* margin-top: 0; */
+  }
+
+  h2 {
+    /* margin-bottom: 0; */
+    /* margin-top: 5px; */
+    margin: 0;
+    color: #121111;
+  }
+
+  .favIcon {
+  /* margin-top:4px; */
+  }
+}
+
+
+/* character additional details - films */
+.charAddlDetail {
+  margin-top: 0;
+  margin-bottom: 0;
+ 
+}
+
+.charFilmsList {
+  margin-top: 0;
+}
+
+.charFilm {
+  margin-left: 0.5rem;
+}
+
+.charDetailsList{
+display: flex;
+flex-direction: column;
+align-items: center;
+font-family: "Cabin";
+color: rgb(131, 137, 137);
+
+  li{ 
+  margin:5px;
+  }
+}
+
+
+.primaryButton{
+background-color: #1a73e8;
+color: snow;
+border-radius: 6%;
+outline: none;
+}
+
+.secondaryButton{
+background-color:snow ;
+color: #1a73e8;
+border-radius: 6%;
+ }
+
+ 
+
+
